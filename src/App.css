@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.editor-container {
+  margin: 20px auto;
+  max-width: 900px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.menu-bar {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+button.is-active {
+  background: #007bff;
+  color: #fff;
+  border-color: #0056b3;
+}
+
+button:hover {
+  background: #e7e7e7;
+}
+
+.clear-all-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+}
+
+.clear-all-button:hover {
+  background: #cc0000;
+}
+
+/* Editor.css */
+
+/* Wrapper for the editor container */
+.editor-container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* MenuBar area - can style it if needed */
+.editor-menu-bar {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Content area where the editor will render */
+.editor-content {
+  height: 100%;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Optional: Style for the text input area if needed */
+.editor-content p {
+  color: #333;
+}
+
+/* Optional: Focus styles for the editor content */
+.editor-container:focus-within .editor-content {
+  border-color: #4caf50; /* Change to your desired focus color */
+}
